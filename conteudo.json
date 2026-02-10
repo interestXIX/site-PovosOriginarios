@@ -1,7 +1,7 @@
 {
   "historias": {
     "titulo": "Histórias",
-    "imagem": "https://codejourney.com.br/wp-content/uploads/2019/08/storytelling-na-antiguidade.png",
+    "imagem": "assets/imagens/imgHIS01.png",
     "texto": [
       "A história indígena de Mato Grosso é um percurso de resistência que une a sofisticação das civilizações pré-coloniais à luta contemporânea de 43 etnias pela terra. Do impacto violento das Bandeiras e do garimpo à diplomacia humanista de Marechal Rondon e à criação do Parque do Xingu, essa trajetória reflete o conflito entre a expansão econômica e a preservação da maior sociobiodiversidade do estado.",
       "A história das populações indígenas em Mato Grosso é uma narrativa de resistência milenar que precede em muito a formação do Estado brasileiro. Antes da colonização, o território era um mosaico de civilizações complexas. Pesquisas arqueológicas modernas, especialmente na região do Alto Xingu, revelaram que povos ancestrais mantinham sistemas de ''cidades-jardim'' interconectadas por estradas largas e estruturas de manejo de solo que sustentavam grandes populações. Essa herança se reflete na imensa diversidade atual, onde convivem grupos de troncos linguísticos distintos, como o Macro-Jê (representado pelos imponentes Xavante e Bororo), o Tupi (como os Kawaiwete), além das famílias Aruak e Karib.",
@@ -13,7 +13,7 @@
 
   "linguas": {
     "titulo": "Línguas",
-    "imagem": "https://www.setesc.ms.gov.br/wp-content/uploads/2021/04/mapa-dos-indios-300x199-1.png",
+    "imagem": "assets/imagens/mapaindigena.png",
     "texto": [
       "A diversidade linguística de Mato Grosso é uma das mais ricas do planeta, funcionando como um verdadeiro arquivo vivo da história sul-americana. O estado é um ponto de encontro de grandes troncos linguísticos, o que indica que a região serviu, por milênios, como um centro de dispersão e refúgio para diferentes povos. Dominar essa complexidade não é apenas uma questão gramatical, mas uma forma de entender como esses grupos percebem o mundo e se organizam socialmente.",
       "No estado, destacam-se dois grandes troncos e diversas famílias independentes. O Tronco Macro-Jê é marcante na região, com línguas como o Akwe-Xavante e o Boe Bororo, conhecidas por sua sonoridade distinta e estruturas que refletem a organização social dualista desses povos. Já o Tronco Tupi se faz presente através de famílias como a Tupi-Guarani, exemplificada pela língua dos Kawaiwete (Kayabi). Além destes, as famílias Aruak (como o Paresi-Haliti) e Karib (como o Kalapalo) compõem o cenário do Alto Xingu, onde o multilinguismo é comum: muitos indígenas falam a língua de seu grupo, a de grupos vizinhos e o português.",
@@ -24,18 +24,22 @@
 
   "cultura": {
     "titulo": "Cultura",
-    "imagem": "https://www.sapicua.com.br/sites/default/files/articles/06%20KUARUP%20-%20ritual%20ind%C3%ADgena%20do%20Xingu%20poder%C3%A1%20se%20tornar%20manifesta%C3%A7%C3%A3o%20da%20cultura%20nacional.jpg",
+    "imagem": "assets/imagens/kuarup.jpg",
     "texto": [
       "A cultura indígena em Mato Grosso é fundamentada em uma conexão profunda entre a espiritualidade e o território, onde cada elemento da natureza possui um significado sagrado. Rituais como o Kuarup, no Alto Xingu, exemplificam essa visão de mundo ao celebrar a memória dos antepassados e a renovação da vida por meio de danças e cantos que unem diferentes etnias. Essas cerimônias não são apenas eventos sociais, mas mecanismos que mantêm o equilíbrio cósmico e a coesão das comunidades.",
       "A organização social dessas civilizações reflete-se na arquitetura das aldeias, como no caso dos Bororo, cujas casas dispostas em círculo simbolizam a estrutura de seus clãs e sua cosmologia. Essa disposição espacial orienta desde os ritos de passagem até o cotidiano, reforçando a identidade coletiva. A vida em comunidade é regida por regras de parentesco e reciprocidade que garantem a sobrevivência e a transmissão dos saberes tradicionais entre as gerações.",
-      "A expressão estética, manifestada na pintura corporal e na arte plumária, funciona como uma linguagem visual complexa. O uso de pigmentos como o urucum e o jenipapo não busca apenas o adorno, mas comunica a posição social, o estado civil ou o papel ritual do indivíduo. Cada grafismo e cada combinação de penas carregam histórias e significados específicos, transformando o corpo em um suporte vivo de memória e resistência cultural.",
-      "Atualmente, essa cultura demonstra uma resiliência notável ao integrar novas tecnologias e formas de expressão sem abandonar suas raízes. A produção de vídeos, a música contemporânea e a participação em festivais são ferramentas que os jovens indígenas utilizam para reafirmar sua presença no mundo moderno. Assim, a cultura mato-grossense mantém sua essência como um processo dinâmico que protege a ancestralidade enquanto dialoga com os desafios do presente."
+      "A expressão estética, manifestada na pintura corporal e na arte plumária, funciona como uma linguagem visual complexa. O uso de pigmentos como o urucum e o jenipapo não busca apenas o adorno, mas comunica a posição social, o estado civil ou o papel ritual do indivíduo. Cada grafismo e cada combinação de penas carregam histórias e significados específicos, transformando o corpo em um suporte vivo de memória e resistência cultural.",      
+      "Atualmente, essa cultura demonstra uma resiliência notável ao integrar novas tecnologias e formas de expressão sem abandonar suas raízes. A produção de vídeos, a música contemporânea e a participação em festivais são ferramentas que os jovens indígenas utilizam para reafirmar sua presença no mundo moderno. Assim, a cultura mato-grossense mantém sua essência como um processo dinâmico que protege a ancestralidade enquanto dialoga com os desafios do presente.",
+      "Para compreender a profundidade das civilizações indígenas de Mato Grosso, é preciso olhar para o Kuarup não apenas como um evento, mas como a expressão máxima de uma rede de relações políticas e espirituais que mantém o Alto Xingu unido há séculos. Este ritual fúnebre marca o encerramento do período de luto por um chefe ou pessoa de grande prestígio, servindo como o momento em que a tristeza pela perda é transformada em alegria e renovação social. É uma cerimônia que atrai diversas etnias vizinhas, reafirmando alianças e celebrando a continuidade da vida sobre a morte.",
+      "O ritual é carregado de simbolismo desde a sua preparação, quando troncos da árvore kuarup são cortados e levados para o centro da aldeia para representar os falecidos. Cada tronco é adornado com pinturas corporais e colares, recebendo o espírito daquele que partiu pela última vez. Durante os dias de cerimônia, a aldeia se torna um palco vibrante de cantos rituais e danças que duram do amanhecer ao anoitecer, criando uma atmosfera onde o tempo mítico e o presente se fundem diante dos olhos dos participantes.",
+      "Um dos momentos mais aguardados e tensos do Kuarup é a Huka-huka, uma modalidade de luta tradicional que coloca à prova a força e o preparo dos jovens guerreiros. A luta começa com os atletas frente a frente, girando em sentido horário e rugindo como onças, antes de se agarrarem pelos pescoços em um teste de técnica e resistência. Para os povos do Xingu, a Huka-huka não é apenas um esporte, mas uma forma de honrar os mortos e demonstrar a vitalidade da juventude que agora assume as responsabilidades da comunidade.",
+      " Ao final do ritual, os troncos são lançados nas águas dos rios ou lagoas próximas, simbolizando a partida definitiva das almas para o mundo espiritual e a limpeza das dores dos familiares que ficaram. O Kuarup termina com um sentimento de purificação e fortalecimento coletivo, provando que, para os indígenas de Mato Grosso, a memória é o solo onde se planta o futuro. Essa celebração é, sem dúvida, o pilar que sustenta a identidade de um dos complexos culturais mais fascinantes e preservados do Brasil."
     ]
   },
 
    "folclore": {
     "titulo": "Folclore",
-    "imagem": "",
+    "imagem": "assets/imagens/grafismoXingu.jpg",
     "texto": [
       "Para falar de ''folclore'' no contexto das civilizações indígenas de Mato Grosso, é preciso entender que, para esses povos, essas histórias não são apenas ''lendas'' ou ''contos de fada'', mas sim a própria realidade e a base de sua visão de mundo (cosmologia). O universo espiritual é habitado por seres que governam as águas, as matas e os fenômenos naturais, estabelecendo regras de convivência que os humanos devem seguir para manter a harmonia do mundo.",
       "Entre os povos do Alto Xingu, um dos eixos centrais de suas narrativas é o mito dos Gêmeos Criadores, Suni e Maivutsini. Essas histórias explicam desde a origem da humanidade, a partir de troncos de madeira, até a invenção dos rituais e a separação entre os povos indígenas e os não-indígenas. Essas figuras míticas funcionam como heróis culturais que ensinaram as técnicas de pesca, o plantio da mandioca e as leis sociais que regem as aldeias até os dias de hoje.",
@@ -45,3 +49,4 @@
   } 
 
 }
+
