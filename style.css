@@ -5,93 +5,104 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-
-
-.text p {
-  line-height: 1.7;
-}
-
-
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #e6d3c1;
-  color: #333;
-  line-height: 1.6;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #fbf8f4;
+  color: #3a2c1c;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
-
-.conteudo .container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.image img {
-  width: 100%;
-  max-width: 450px;
-  height: auto;
-  border-radius: 12px;
-}
-
-
-/* Cabeçalho */
+/* Cabeçalho melhorado - Marrom */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #4a2c2a;
+  background: #5d4037;
   color: #fff;
-  padding: 15px 20px;
+  padding: 18px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo::before {
+  content: "🌿";
+  font-size: 1.8rem;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-}
-
-nav ul li {
-  margin-left: 20px;
+  gap: 30px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 nav ul li a:hover {
-  color: #ffd700;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
 }
 
-/* Botão menu mobile */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #d7ccc8;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 60%;
+}
+
 #menu-toggle {
   display: none;
   background: none;
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
   font-size: 1.5rem;
   color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* =====================
-   HERO SECTION
-===================== */
+#menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 
-/* Hero Section */
+/* Hero Section - Ajustando cores para combinar */
 .hero {
   height: 80vh;
   background: 
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    linear-gradient(rgba(93, 64, 55, 0.4), rgba(93, 64, 55, 0.4)),
     url("assets/imagens/indio.jpg");
   background-size: cover;
   background-position: center;
@@ -110,79 +121,183 @@ nav ul li a:hover {
 .hero h1 {
   font-size: 2.8rem;
   margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  opacity: 0.95;
 }
 
 .hero-buttons a {
   display: inline-block;
-  padding: 12px 25px;
-  margin: 0 10px;
+  padding: 14px 32px;
+  margin: 0 12px;
   text-decoration: none;
   color: #fff;
-  background: #c19a6b;
-  border-radius: 5px;
+  background: #8d6e63;
+  border-radius: 30px;
   transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 6px 20px rgba(93, 64, 55, 0.3);
 }
 
 .hero-buttons a:hover {
-  background: #a97c50;
+  background: #a1887f;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(93, 64, 55, 0.4);
 }
 
 .hero-buttons .outline {
   background: transparent;
   border: 2px solid #fff;
+  box-shadow: none;
 }
 
 .hero-buttons .outline:hover {
   background: #fff;
-  color: #4a2c2a;
+  color: #5d4037;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .hero-buttons a {
-    display: block;
-    margin: 10px auto;
-  }
-}
-
-
-/* Seções */
+/* Seções de conteúdo melhoradas */
 section {
-  padding: 40px 20px;
+  padding: 80px 40px;
 }
 
-section h2 {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.text {
+  padding: 30px;
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  color: #5d4037;
+  margin-bottom: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.text h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #5d4037, #8d6e63);
+  border-radius: 2px;
+}
+
+.text p {
+  font-size: 1.1rem;
+  color: #4e4039;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(93, 64, 55, 0.1);
+  transition: all 0.4s ease;
+  height: fit-content;
+}
+
+.image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(93, 64, 55, 0.15);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.image:hover img {
+  transform: scale(1.05);
+}
+
+/* Seções alternadas */
+#historias, #folclore {
+  background: #f5efe9;
+  position: relative;
+}
+
+#historias::before, #folclore::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(90deg, #5d4037, #8d6e63);
+}
+
+#linguas, #cultura {
+  background: #fbf8f4;
+}
+
+/* Seção Cultura - parágrafo especial */
+#cultura .text + p {
+  grid-column: 1 / -1;
+  background: #f5efe9;
+  padding: 40px;
+  border-radius: 16px;
+  margin-top: 40px;
+  border-left: 6px solid #5d4037;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4e4039;
+  box-shadow: 0 10px 25px rgba(93, 64, 55, 0.05);
+}
+
+#cultura .text + p br {
   margin-bottom: 15px;
-  color: #4a2c2a;
+  display: block;
 }
 
-/* =====================
-   REFERÊNCIAS
-===================== */
-
+/* Seção Referências melhorada - Marrom */
 #referencias {
-  background: #f3e7dc;
-  padding: 60px 20px;
+  background: linear-gradient(135deg, #5d4037 0%, #3e2723 100%);
+  padding: 80px 40px;
+  color: white;
 }
 
 #referencias h2 {
   text-align: center;
-  font-size: 2rem;
-  color: #4a2c2a;
-  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 50px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#referencias h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: #d7ccc8;
+  border-radius: 2px;
 }
 
 #referencias ul {
@@ -190,78 +305,64 @@ section h2 {
   margin: 0 auto;
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 25px;
 }
 
 #referencias li {
-  background: #fff;
-  margin-bottom: 15px;
-  padding: 15px 20px;
-  border-left: 6px solid #c19a6b;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
 }
 
 #referencias li:hover {
-  transform: translateX(6px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(215, 204, 200, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-#referencias a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  display: block;
-}
-
-#referencias a:hover {
-  color: #4a2c2a;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  #referencias h2 {
-    font-size: 1.6rem;
-  }
-
-  #referencias li {
-    padding: 12px 15px;
-  }
-}
-
-
-/* Rodapé */
+/* Rodapé melhorado - Marrom */
 footer {
   text-align: center;
-  background: #4a2c2a;
+  background: #3e2723;
   color: #fff;
-  padding: 15px;
+  padding: 40px 20px;
+  position: relative;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: #4a2c2a;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 10px;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  #menu-toggle {
-    display: block;
-  }
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #d7ccc8, #5d4037);
 }
 
+footer p {
+  margin: 10px 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+footer p:first-child {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Efeito reveal melhorado */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease;
+  transform: translateY(60px);
+  transition: all 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .reveal.active {
@@ -269,12 +370,103 @@ footer {
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-  .conteudo .container {
+/* Responsividade */
+@media (max-width: 1024px) {
+  .container {
+    gap: 40px;
+  }
+  
+  #referencias ul {
     grid-template-columns: 1fr;
   }
+}
 
-  .image img {
-    max-width: 100%;
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+  
+  nav ul {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #5d4037;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  
+  nav ul.show {
+    display: flex;
+  }
+  
+  #menu-toggle {
+    display: block;
+  }
+  
+  section {
+    padding: 60px 20px;
+  }
+  
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .text {
+    padding: 0;
+  }
+  
+  .text h2 {
+    font-size: 2rem;
+  }
+  
+  #referencias h2 {
+    font-size: 2rem;
+  }
+  
+  #cultura .text + p {
+    padding: 25px;
+    margin-top: 30px;
+  }
+  
+  #referencias li {
+    padding: 20px;
+  }
+  
+  .hero-buttons a {
+    display: block;
+    margin: 15px auto;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .text h2 {
+    font-size: 1.8rem;
+  }
+  
+  section {
+    padding: 50px 15px;
+  }
+  
+  #referencias ul {
+    gap: 15px;
+  }
+  
+  #referencias li {
+    padding: 15px;
   }
 }
