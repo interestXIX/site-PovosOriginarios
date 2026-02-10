@@ -1,0 +1,280 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+.text p {
+  line-height: 1.7;
+}
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e6d3c1;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.conteudo .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4a2c2a;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Botão menu mobile */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("assets/imagens/indio.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background: #c19a6b;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons a:hover {
+  background: #a97c50;
+}
+
+.hero-buttons .outline {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.hero-buttons .outline:hover {
+  background: #fff;
+  color: #4a2c2a;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons a {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+
+/* Seções */
+section {
+  padding: 40px 20px;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #4a2c2a;
+}
+
+/* =====================
+   REFERÊNCIAS
+===================== */
+
+#referencias {
+  background: #f3e7dc;
+  padding: 60px 20px;
+}
+
+#referencias h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4a2c2a;
+  margin-bottom: 30px;
+}
+
+#referencias ul {
+  max-width: 900px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+#referencias li {
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-left: 6px solid #c19a6b;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#referencias li:hover {
+  transform: translateX(6px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#referencias a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  display: block;
+}
+
+#referencias a:hover {
+  color: #4a2c2a;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #referencias h2 {
+    font-size: 1.6rem;
+  }
+
+  #referencias li {
+    padding: 12px 15px;
+  }
+}
+
+
+/* Rodapé */
+footer {
+  text-align: center;
+  background: #4a2c2a;
+  color: #fff;
+  padding: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #4a2c2a;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .conteudo .container {
+    grid-template-columns: 1fr;
+  }
+
+  .image img {
+    max-width: 100%;
+  }
+}
